@@ -1,8 +1,8 @@
-# BouncyHabits ⏳🎉
+# Done! ⏳🎉
 
 A premium, interactive React Native & Expo habit tracker and countdown timer app designed for Android. It features a central spring-bouncy countdown timer, custom alarms, daily habit management, and robust compatibility safeguards for running in modern Expo Go environments.
 
-![App Screenshot Placeholder](https://raw.githubusercontent.com/username/bouncy-habits/main/assets/screenshot-placeholder.png) <!-- Replace with your own screenshot after pushing -->
+![App Screenshot Placeholder](https://raw.githubusercontent.com/username/done/main/assets/screenshot-placeholder.png) <!-- Replace with your own screenshot after pushing -->
 
 ---
 
@@ -31,8 +31,8 @@ Anyone can download and run this app on their local machine and preview it on th
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/<your-username>/bouncy-habits.git
-   cd bouncy-habits
+   git clone https://github.com/<your-username>/done.git
+   cd done
    ```
 
 2. **Install Dependencies**:

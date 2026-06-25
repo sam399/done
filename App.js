@@ -53,10 +53,10 @@ if (hasNativeModule('ExponentAV')) {
   try {
     Audio = require('expo-av').Audio;
   } catch (err) {
-    console.warn('[BouncyHabits] Audio playback module found but failed to load:', err.message);
+    console.warn('[Done] Audio playback module found but failed to load:', err.message);
   }
 } else {
-  console.warn('[BouncyHabits] ExponentAV native module not found. Audio playback disabled, using vibration fallback.');
+  console.warn('[Done] ExponentAV native module not found. Audio playback disabled, using vibration fallback.');
 }
 
 import { 
@@ -84,10 +84,10 @@ if (hasNotificationsNative) {
   try {
     Notifications = require('expo-notifications');
   } catch (err) {
-    console.warn('[BouncyHabits] Notifications module found but failed to load:', err.message);
+    console.warn('[Done] Notifications module found but failed to load:', err.message);
   }
 } else {
-  console.warn('[BouncyHabits] Notification native modules not found. Scheduled reminders disabled.');
+  console.warn('[Done] Notification native modules not found. Scheduled reminders disabled.');
 }
 
 // Configure Notifications behavior safely
@@ -101,12 +101,12 @@ if (Notifications) {
       }),
     });
   } catch (err) {
-    console.warn('[BouncyHabits] Failed to set notification handler:', err.message);
+    console.warn('[Done] Failed to set notification handler:', err.message);
   }
 }
 
 
-const STORAGE_KEY = '@bouncy_habits_data';
+const STORAGE_KEY = '@done_habits_data';
 
 export default function App() {
   // App States
@@ -512,7 +512,7 @@ export default function App() {
       
       {/* Header */}
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>BouncyHabits</Text>
+        <Text style={styles.headerTitle}>Done!</Text>
         <TouchableOpacity 
           style={styles.soundButton}
           onPress={() => {
